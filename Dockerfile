@@ -5,9 +5,7 @@ MAINTAINER Simon Egli <goldencheetahgit_a4747d@egli.online>
 
 LABEL description="A GoldenCheetah build environment"
 
-#RUN apt-get update && apt-get install -y \
-RUN apt-get update 
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
   gcc \
   clang \
   cmake \
@@ -22,7 +20,7 @@ RUN apt-get install -y \
   git-core \
   libftdi-dev \
   liboauth-dev \
-  libqwtplot3d-qt5-dev \
+  libqwtplot3d-qt5-dev libqwtplot3d-qt5-0 \
   libkml-dev \
   flex \
   bison \
